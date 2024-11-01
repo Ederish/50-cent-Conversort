@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>50 centavos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="img\50cent.jpg" alt="">
+            <p>50 cent</p>
+        </div>
+        <div class="grid-item">
+            <img class="flag" src="img\USA.png" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="img\50cent.jpg" alt="">
+            <p id="coins">495 pesos</p>
+        </div>
+        <div class="grid-item">
+            <img id="latam-flag" class="flag" src="img\AR.jpg" alt="">
+        </div>
+    </div>
+    <form onsubmit="event.preventDefault(); updateCurrency();">
+        <label for="countries">Elige un país:</label>
+        <select name="countries" id="countries">
+            <option value="AR">&#x1F1E6;&#x1F1F7; Argentina</option>
+            <option value="CL">&#x1F1E8;&#x1F1F1; Chile</option>
+            <option value="CO">&#x1F1E8;&#x1F1F4; Colombia</option>
+            <option value="CU">&#x1F1E8;&#x1F1FA; Cuba</option>
+            <option value="DO">&#x1F1E9;&#x1F1F4; Rep. Dominicana</option>
+            <option value="MX">&#x1F1F2;&#x1F1FD; México</option>
+            <option value="UY">&#x1F1FA;&#x1F1FE; Uruguay</option>
+        </select>
+        <br><br>
+        <input type="submit" value="cambiar Moneda">
+    </form>
+    <script src="./scrpt.js"></script>
+</body>
+</html>
