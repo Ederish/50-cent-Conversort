@@ -42,6 +42,7 @@ async function fetchCurrency() {
           break;
         case "UY":
           coins.innerHTML = Math.floor(coinsApi["UYU"] / 2) + " Pesos";
+          latamFlag.src = flags[6];
           break;
         default:
           coins.innerHTML = Math.floor(coinsApi["ARS"] / 2);
